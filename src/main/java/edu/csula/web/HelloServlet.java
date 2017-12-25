@@ -1,4 +1,4 @@
-package edu.csula;
+package edu.csula.web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
