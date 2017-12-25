@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  back:
+  build:
     docker:
       - image: circleci/openjdk:8-jdk
 
@@ -21,7 +21,7 @@ jobs:
 
       - run: gradle test
 
-  front:
+  front_test:
     docker:
       - image: circleci/node:7.10
 
@@ -49,7 +49,7 @@ jobs:
 
 workflows:
   version: 2
-    back_and_front:
+    build_and_front_test:
       jobs:
-        - back
-        - front
+        - build
+        - front_front
