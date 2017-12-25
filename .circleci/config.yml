@@ -25,10 +25,10 @@ jobs:
     docker:
       - image: circleci/node:7.10
 
-    working_directory: ~/java-web/client
-
     steps:
       - checkout
+
+      - run: cd client
 
       # Download and cache dependencies
       - restore_cache:
