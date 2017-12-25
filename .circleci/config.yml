@@ -25,7 +25,7 @@ jobs:
     docker:
       - image: circleci/node:7.10
 
-    working_directory: client
+    working_directory: ~/java-web/client
 
     steps:
       - checkout
